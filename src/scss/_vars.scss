@@ -1,0 +1,16 @@
+:root {
+	// base
+	--font-family: "Golos-Text", sans-serif;
+	--content-width: 1219px;
+	--container-offset: 20px;
+	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+	// colors
+	--white-color: #fff;
+	--black-color: #1e1e1e;
+	--blue-color: #005893;
+	--light-blue-color: #0bbbef;
+	--second-light-blue-color: #126797;
+	--dark-blue-color: #142647;
+	--grey-color: #cae0ee;
+}

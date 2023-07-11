@@ -1,0 +1,90 @@
+.hero {
+	position: relative;
+	padding-top: 115px;
+	padding-bottom: 135px;
+	overflow: hidden;
+	background: var(--dark-blue-color);
+	&__container {
+		position: relative;
+		z-index: 100;
+	}
+	&__title {
+		max-width: 574px;
+		margin-bottom: 58px;
+	}
+	&__subtitle {
+		margin-bottom: 24px;
+	}
+	&__button {
+		padding: 20px 28px;
+		border-radius: 15px;
+		border: 2px solid var(--light-blue-color);
+		display: flex;
+		align-items: center;
+		gap: 28px;
+		font-size: 24px;
+		line-height: 40px;
+		color: var(--white-color);
+		transition: box-shadow 0.3s ease, background 0.3s ease;
+		&:hover {
+			background: var(--blue-color);
+			box-shadow: 0px 4px 20px 4px rgba(11, 187, 239, 0.2);
+		}
+	}
+	&__image {
+		&-kit {
+			animation: moving-fish infinite 7s ease-in-out;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			z-index: 50;
+		}
+	}
+}
+
+@keyframes moving-fish {
+	0% {
+		transform: rotate(40deg) translate(100%, -35%);
+	}
+	100% {
+		transform: rotate(30deg) translate(-240%, 100%);
+	}
+}
+
+@media (max-width: 768px) {
+	.hero {
+		&__image {
+			&-kit {
+				width: 348.854px;
+				height: 249.803px;
+			}
+		}
+	}
+	@keyframes moving-fish {
+		0% {
+			transform: rotate(40deg) translate(100%, -35%);
+		}
+		100% {
+			transform: rotate(20deg) translate(-330%, 30%);
+		}
+	}
+}
+
+@media (max-width: 601px) {
+	.hero {
+		padding-top: 65px;
+		padding-bottom: 65px;
+		&__subtitle {
+			line-height: 120%;
+			font-size: 14px;
+		}
+		&__title {
+			font-size: 42px;
+			line-height: 48px;
+		}
+		&__button {
+			padding: 10px 20px;
+			gap: 10px;
+		}
+	}
+}

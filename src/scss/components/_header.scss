@@ -1,0 +1,33 @@
+.header {
+	background: var(--blue-color);
+	padding-top: 22px;
+	padding-bottom: 22px;
+	&__container {
+		max-width: 1540px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+@media (max-width: 1024px) {
+	.header {
+		&__container {
+			padding-right: 22px;
+			padding-left: 22px;
+		}
+		&__logo {
+			width: 90px;
+			height: 66px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.header {
+		&__logo {
+			width: 67.006px;
+			height: 50px;
+		}
+	}
+}

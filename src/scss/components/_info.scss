@@ -1,0 +1,137 @@
+.info {
+	min-height: 600px;
+	background: var(--grey-color);
+	display: flex;
+	align-items: center;
+	background: url("../img/bg-ellipse.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 50% 100%;
+	&__container {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+	}
+	&__title {
+		margin-bottom: 100px;
+		line-height: 120%;
+	}
+	&__button {
+		padding: 6px 28px;
+		color: var(--white-color);
+		font-size: 24px;
+		line-height: 40px;
+		border-radius: 15px;
+		background: var(--dark-blue-color);
+		border: 1px solid var(--dark-blue-color);
+		transition: color 0.3s ease, background 0.3s ease;
+		&:hover {
+			background: var(--grey-color);
+			color: var(--dark-blue-color);
+		}
+		&-hidden {
+			display: none;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+	&__item {
+		position: relative;
+		color: var(--black-color);
+		font-size: 28px;
+		font-weight: 400;
+		line-height: 120%;
+		padding-left: 24px;
+		&::before {
+			content: "+";
+			font-weight: 700;
+			color: var(--blue-color);
+			position: absolute;
+			top: 50%;
+			left: 0px;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+@media (max-width: 1240px) {
+	.info {
+		min-height: 510px;
+		&__title {
+			font-size: 34px;
+		}
+		&__item {
+			font-size: 20px;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.info {
+		min-height: 410px;
+		&__title {
+			font-size: 34px;
+			margin-bottom: 55px;
+		}
+		&__item {
+			font-size: 20px;
+		}
+	}
+}
+
+@media (max-width: 840px) {
+	.info {
+		&__list {
+			margin-right: -12px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.info {
+		min-height: 322px;
+		&__title {
+			font-size: 28px;
+			margin-bottom: 70px;
+		}
+		&__item {
+			font-size: 16px;
+		}
+		&__button {
+			font-size: 16px;
+			line-height: 18px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.info {
+		min-height: unset;
+		padding-top: 59px;
+		padding-bottom: 57px;
+		background-image: url("../img/480-bg-ellipse.png");
+		background-size: 38% 100%;
+		&__container {
+			flex-direction: column;
+			gap: 46px;
+		}
+		&__title {
+			margin-bottom: 0;
+			font-size: 28px;
+			line-height: 28px;
+		}
+		&__button {
+			display: none;
+			&-hidden {
+				display: block;
+				width: fit-content;
+				border-radius: 10px;
+				padding: 10px 20px;
+			}
+		}
+	}
+}

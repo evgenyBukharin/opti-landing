@@ -1,0 +1,179 @@
+.footer {
+	padding-top: 55px;
+	padding-bottom: 55px;
+	background: var(--blue-color);
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		gap: 24px;
+		max-width: 1363px;
+		&-text {
+			display: flex;
+			align-items: center;
+			gap: 12px 36px;
+			flex-wrap: wrap;
+		}
+	}
+	&__column {
+		&-left {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 26px;
+		}
+		&-partners {
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: 84px;
+			gap: 15px 20px;
+			max-width: 960px;
+		}
+	}
+	&__link {
+		font-size: 16px;
+		line-height: 120%;
+		color: var(--white-color);
+		text-decoration: none;
+		white-space: nowrap;
+	}
+	&__partner {
+		position: relative;
+		grid-column: 4 span;
+		padding: 7px 10px 7px 9px;
+		border-radius: 20px;
+		background: #00a0e3;
+		display: flex;
+		gap: 20px;
+		align-items: center;
+		transition: background 0.4s ease;
+		&-purple {
+			&:hover {
+				background: #45398f;
+				& .footer__icon-change {
+					fill: #45398f;
+				}
+			}
+		}
+		&-green {
+			&:hover {
+				background: #9dc64c;
+				& .footer__icon-change {
+					fill: #9dc64c;
+				}
+			}
+		}
+		&-yellow {
+			&:hover {
+				background: #f2d450;
+				& .footer__icon-change {
+					fill: #f2d450;
+				}
+			}
+		}
+		&-blue {
+			&:hover {
+				background: #307cc0;
+				& .footer__icon-change {
+					fill: #307cc0;
+				}
+			}
+		}
+		&-lightblue {
+			&:hover {
+				background: #35bff0;
+				& .footer__icon-change {
+					fill: #35bff0;
+				}
+			}
+		}
+		&-pink {
+			&:hover {
+				background: #d45b9e;
+				& .footer__icon-change {
+					fill: #d45b9e;
+				}
+			}
+		}
+	}
+	&__text {
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 24px;
+		min-height: 69px;
+		display: flex;
+		align-items: center;
+	}
+	&__icon {
+		&-1c {
+			margin-left: 13px;
+			width: 49px;
+			height: 49px;
+			min-width: 49px;
+			min-height: 49px;
+		}
+		&-change {
+			transition: fill 0.4s ease;
+		}
+	}
+}
+
+@media (max-width: 1300px) {
+	.footer {
+		&__column {
+			&-partners {
+				max-width: 590px;
+				gap: 20px;
+			}
+			&-left {
+				justify-content: center;
+			}
+		}
+		&__partner {
+			grid-column: 6 span;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.footer {
+		&__column {
+			&-partners {
+				max-width: unset;
+			}
+		}
+		&__container {
+			padding-left: 55px;
+			padding-right: 55px;
+			flex-direction: column-reverse;
+			row-gap: 70px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.footer {
+		&__column {
+			&-partners {
+				column-gap: 0;
+			}
+		}
+		&__partner {
+			grid-column: 12 span;
+		}
+		&__icon {
+			&-b24 {
+				margin-left: 14px;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.footer {
+		&__container {
+			padding-left: 28px;
+			padding-right: 28px;
+		}
+	}
+}

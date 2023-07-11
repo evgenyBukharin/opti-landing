@@ -1,0 +1,27 @@
+.title {
+	margin: 0;
+	&__h2 {
+		font-size: 68px;
+		line-height: 70px;
+		text-transform: uppercase;
+		color: var(--white-color);
+		font-weight: 700;
+	}
+	&__h3 {
+		color: var(--blue-color);
+		font-size: 48px;
+		line-height: 70.5px;
+	}
+	&__h4 {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 60px;
+		color: var(--light-blue-color);
+	}
+	&__h5 {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 29px;
+		color: var(--white-color);
+	}
+}
