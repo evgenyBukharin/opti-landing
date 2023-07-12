@@ -521,6 +521,10 @@ html {
   counter-reset: items;
   overflow: hidden
 }
+.license__content {
+  position: relative;
+  z-index: 900
+}
 .license__container {
   position: relative;
   z-index: 800
@@ -620,13 +624,13 @@ html {
     line-height: 120%
   }
   .license__image {
-    top: 55%;
-    left: -46%
+    top: 102%;
+    left: -59%
   }
   .license__image-anim {
-    -webkit-transform: scale(.75) translateY(-50%);
-    -ms-transform: scale(.75) translateY(-50%);
-    transform: scale(.75) translateY(-50%)
+    -webkit-transform: scale(.89) translateY(-50%) rotate(-28deg);
+    -ms-transform: scale(.89) translateY(-50%) rotate(-28deg);
+    transform: scale(.89) translateY(-50%) rotate(-28deg)
   }
 }
 @media (max-width:956px) {
@@ -636,10 +640,10 @@ html {
     padding: 36px 26px 36px 110px
   }
 }
-@media (max-width:768px) {
+@media (max-width:840px) {
   .license__image {
-    top: 65%;
-    left: -83%
+    top: 61%;
+    left: -72%
   }
   .license__image-anim {
     -webkit-transform: scale(.86) translateY(-50%) rotate(-30deg);
@@ -649,16 +653,16 @@ html {
 }
 @media (max-width:523px) {
   .license__image {
-    top: 59%;
-    left: -145%;
+    top: 62%;
+    left: -147%;
     -webkit-transform: scale(0) rotate(331deg) translateY(-50%);
     -ms-transform: scale(0) rotate(331deg) translateY(-50%);
     transform: scale(0) rotate(331deg) translateY(-50%)
   }
   .license__image-anim {
-    -webkit-transform: scale(.75) translateY(-50%) rotate(331deg);
-    -ms-transform: scale(.75) translateY(-50%) rotate(331deg);
-    transform: scale(.75) translateY(-50%) rotate(331deg)
+    -webkit-transform: scale(.7) translateY(-50%) rotate(-29deg);
+    -ms-transform: scale(.7) translateY(-50%) rotate(-29deg);
+    transform: scale(.7) translateY(-50%) rotate(-29deg)
   }
   .license__subtitle {
     font-size: 16px;
@@ -687,9 +691,9 @@ html {
     transform: scale(0) rotate(331deg) translateY(-50%)
   }
   .license__image-anim {
-    -webkit-transform: scale(.61) translateY(-50%) rotate(331deg);
-    -ms-transform: scale(.61) translateY(-50%) rotate(331deg);
-    transform: scale(.61) translateY(-50%) rotate(331deg)
+    -webkit-transform: scale(.61) translateY(-50%) rotate(-29deg);
+    -ms-transform: scale(.61) translateY(-50%) rotate(-29deg);
+    transform: scale(.61) translateY(-50%) rotate(-29deg)
   }
   .license__item {
     padding: 10px 10px 10px 100px;
