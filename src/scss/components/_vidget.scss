@@ -3,24 +3,27 @@
 	top: 152px;
 	right: 0;
 	z-index: 1000;
+	transform: translateX(120%);
+	transition: transform 0.5s ease;
 	border-radius: 15px;
-	transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.47, 1.46), visibility 0.6s cubic-bezier(0.25, 0.1, 0.47, 1.46);
-	transform: translateX(0);
-	visibility: visible;
+	visibility: hidden;
 	padding-left: 10px;
 	padding-right: 10px;
-	&:hover {
-		& .vidget__overlay {
-			opacity: 1;
-			visibility: visible;
-		}
-	}
+	max-width: 600px;
+	width: 100%;
+
 	&__container {
 		overflow: hidden;
 		border-radius: 15px;
 		position: relative;
 		padding: 36px 30px;
 		background: #142647;
+		&:hover {
+			& .vidget__overlay {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
 	}
 	&__overlay {
 		position: absolute;
@@ -46,7 +49,7 @@
 		font-weight: 700;
 		line-height: 29px;
 		margin: 0;
-		color: var(--white-color);
+		color: white;
 		&-blue {
 			color: #0bbbef;
 		}
@@ -56,7 +59,7 @@
 			font-size: 24px;
 			font-weight: 700;
 			line-height: 120%;
-			color: var(--white-color);
+			color: white;
 		}
 	}
 	&__icon {
@@ -65,7 +68,17 @@
 			top: 10px;
 			right: 10px;
 			cursor: pointer;
-			z-index: 1000;
+			z-index: 1001;
+			transition: background 0.4s ease;
+			border-radius: 100%;
+			&:hover {
+				background: #0bbbef;
+				animation: close-icon 1.5s ease infinite;
+				& ~ .vidget__overlay {
+					opacity: 0 !important;
+					visibility: hidden !important;
+				}
+			}
 		}
 	}
 	&__image {
@@ -73,12 +86,12 @@
 			position: absolute;
 			bottom: -100px;
 			right: -160px;
-			animation: kit-moving 6s linear infinite;
+			animation: kit-moving 9s linear infinite 6s;
 		}
 	}
-	&-hidden {
-		transform: translateX(150%);
-		visibility: hidden;
+	&-visible {
+		animation: vidget-anim 3s linear forwards;
+		visibility: visible;
 	}
 }
 
@@ -87,6 +100,26 @@
 		transform: translate(100%, 0) rotate(0deg);
 	}
 	100% {
-		transform: translate(-450%, -200%) rotate(-30deg);
+		transform: translate(-550%, -200%) rotate(-30deg);
+	}
+}
+@keyframes close-icon {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes vidget-anim {
+	0% {
+		transform: translateX(120%);
+	}
+	70% {
+		transform: translateX(70%);
+	}
+	100% {
+		transform: translateX(0%);
 	}
 }

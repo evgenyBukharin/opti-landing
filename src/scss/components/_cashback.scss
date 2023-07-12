@@ -74,12 +74,12 @@
 			left: 0;
 			&-bottom {
 				&-anim {
-					animation: bottom-circle 2s infinite;
+					animation: bottom-circle 3s infinite;
 				}
 			}
 			&-top {
 				&-anim {
-					animation: top-circle 2s infinite;
+					animation: top-circle 3s infinite;
 				}
 			}
 		}
@@ -91,7 +91,7 @@
 		fill: var(--light-blue-color);
 		transform: translateY(0);
 	}
-	68% {
+	58% {
 		fill: var(--blue-color);
 		transform: translateY(-95px);
 	}
@@ -109,7 +109,7 @@
 		fill: var(--light-blue-color);
 		transform: translateY(0);
 	}
-	68% {
+	58% {
 		fill: var(--blue-color);
 		transform: translateY(95px);
 	}
@@ -122,7 +122,7 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
 	.cashback {
 		&__column {
 			&-circles {

@@ -33,7 +33,9 @@
 	}
 	&__image {
 		&-kit {
-			animation: moving-fish infinite 7s ease-in-out;
+			animation: moving-fish infinite 10s linear;
+			transform-origin: center;
+			transform-box: fill-box;
 			position: absolute;
 			right: 0;
 			bottom: 0;
@@ -44,10 +46,10 @@
 
 @keyframes moving-fish {
 	0% {
-		transform: rotate(40deg) translate(100%, -35%);
+		transform: rotate(50deg) translate(100%, -30%);
 	}
 	100% {
-		transform: rotate(30deg) translate(-240%, 100%);
+		transform: rotate(-40deg) translate(-400%, 0%);
 	}
 }
 
@@ -65,7 +67,7 @@
 			transform: rotate(40deg) translate(100%, -35%);
 		}
 		100% {
-			transform: rotate(20deg) translate(-330%, 30%);
+			transform: rotate(-20deg) translate(-430%, -100%);
 		}
 	}
 }
@@ -85,6 +87,14 @@
 		&__button {
 			padding: 10px 20px;
 			gap: 10px;
+		}
+	}
+	@keyframes moving-fish {
+		0% {
+			transform: rotate(40deg) translate(100%, -35%);
+		}
+		100% {
+			transform: rotate(-40deg) translate(-430%, -100%);
 		}
 	}
 }
