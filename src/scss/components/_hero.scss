@@ -46,10 +46,10 @@
 
 @keyframes moving-fish {
 	0% {
-		transform: rotate(50deg) translate(100%, -30%);
+		transform: rotate(60deg) translate(100%, -30%);
 	}
 	100% {
-		transform: rotate(-40deg) translate(-400%, 0%);
+		transform: rotate(-40deg) translate(-450%, 70%);
 	}
 }
 
@@ -57,14 +57,13 @@
 	.hero {
 		&__image {
 			&-kit {
-				width: 348.854px;
-				height: 249.803px;
+				width: 550.854px;
 			}
 		}
 	}
 	@keyframes moving-fish {
 		0% {
-			transform: rotate(40deg) translate(100%, -35%);
+			transform: rotate(40deg) translate(100%, 0%);
 		}
 		100% {
 			transform: rotate(-20deg) translate(-430%, -100%);
@@ -88,13 +87,19 @@
 			padding: 10px 20px;
 			gap: 10px;
 		}
+		&__image {
+			&-kit {
+				width: 340.854px;
+				height: fit-content;
+			}
+		}
 	}
 	@keyframes moving-fish {
 		0% {
-			transform: rotate(40deg) translate(100%, -35%);
+			transform: rotate(40deg) translate(130%, -20%);
 		}
 		100% {
-			transform: rotate(-40deg) translate(-430%, -100%);
+			transform: rotate(-20deg) translate(-300%, -140%);
 		}
 	}
 }
