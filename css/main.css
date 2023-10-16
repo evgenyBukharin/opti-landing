@@ -261,8 +261,8 @@ html {
   font-size: 24px;
   line-height: 40px;
   color: var(--white-color);
-  -webkit-animation: 3s infinite btn;
-  animation: 3s infinite btn;
+  -webkit-animation: 2.2s infinite btn;
+  animation: 2.2s infinite btn;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0
