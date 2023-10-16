@@ -27,30 +27,6 @@ const observer = new IntersectionObserver(entries => {
 // элемент за которым следить
 observer.observe(document.querySelector(".license__image"));
 
-/***/ }),
-
-/***/ 783:
-/***/ (() => {
-
-const vidget = document.querySelector(".vidget");
-if (vidget !== null) {
-  setTimeout(() => {
-    vidget.classList.add("vidget-visible");
-  }, 5000);
-  const vidgetIconClose = vidget.querySelector(".vidget__icon-close");
-  vidgetIconClose.addEventListener("click", () => {
-    vidget.classList.remove("vidget-visible");
-    vidget.style.transform = "translateX(0)";
-    vidget.style.visibility = "visible";
-    setTimeout(() => {
-      vidget.style.transform = "translateX(120%)";
-    }, 0);
-    setTimeout(() => {
-      vidget.style.visibility = "hidden";
-    }, 500);
-  });
-}
-
 /***/ })
 
 /******/ 	});
@@ -96,12 +72,12 @@ var __webpack_exports__ = {};
 var scroll_anim = __webpack_require__(750);
 // EXTERNAL MODULE: ./src/js/components/circles-anim.js
 var circles_anim = __webpack_require__(98);
-// EXTERNAL MODULE: ./src/js/components/vidget.js
-var vidget = __webpack_require__(783);
 ;// CONCATENATED MODULE: ./src/js/_components.js
 
 
 
+
+// import "./components/vidget";
 ;// CONCATENATED MODULE: ./src/js/main.js
 
 
