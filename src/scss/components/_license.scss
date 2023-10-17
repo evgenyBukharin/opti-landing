@@ -92,7 +92,8 @@
 	}
 	&__links {
 		display: flex;
-		gap: 41px;
+		gap: 20px 41px;
+		flex-wrap: wrap;
 	}
 	&__link {
 		color: var(--white-color);
@@ -106,6 +107,148 @@
 		text-decoration: none;
 		&-light {
 			background: var(--second-light-blue-color);
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.license {
+		&__banner {
+			align-items: center;
+			padding: 35px 87px 35px 35px;
+		}
+	}
+}
+
+@media (max-width: 885px) {
+	.license {
+		&__banner {
+			padding: 35px;
+		}
+		&__kit {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 850px) {
+	.license {
+		margin-top: 100px;
+		&__item {
+			grid-column: 6 span;
+			padding: 150px 54px 47px 36px;
+		}
+		&__title {
+			margin-bottom: 70px;
+			line-height: 120%;
+			font-size: 63px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.license {
+		&__title {
+			&-banner {
+				font-size: 40px;
+				line-height: 120%;
+				margin-bottom: 35px;
+			}
+		}
+		&__link {
+			font-size: 16px;
+			line-height: 120%;
+			padding: 8px 16px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.license {
+		margin-top: 100px;
+		&__item {
+			min-height: 240px;
+			padding: 80px 20px 48px;
+			&::before {
+				left: 20px;
+				top: 12px;
+				font-size: 48px;
+				line-height: 48px;
+			}
+			&::after {
+				width: 46px;
+				top: 48px;
+				left: 42px;
+			}
+		}
+		&__title {
+			margin-bottom: 46px;
+			font-size: 46px;
+			line-height: 46px;
+		}
+		&__text {
+			&-primary {
+				font-size: 16px;
+				line-height: 120%;
+				margin-bottom: 8px;
+			}
+			&-secondary {
+				font-size: 12px;
+				line-height: 130%;
+			}
+		}
+		&__icon {
+			bottom: 15px;
+			right: 15px;
+		}
+	}
+}
+
+@media (max-width: 395px) {
+	.license {
+		margin-top: 100px;
+		&__title {
+			margin-bottom: 36px;
+			font-size: 38px;
+			line-height: 38px;
+			&-banner {
+				font-size: 26px;
+				margin-bottom: 15px;
+			}
+		}
+		&__list {
+			column-gap: 0;
+		}
+		&__item {
+			grid-column: 12 span;
+			min-height: 180px;
+		}
+		&__banner {
+			padding: 28px;
+		}
+		&__links {
+			row-gap: 15px;
+		}
+	}
+}
+
+@media (max-width: 372px) {
+	.license {
+		margin-top: 100px;
+		&__list {
+			column-gap: 0;
+		}
+		&__item {
+			grid-column: 12 span;
+			min-height: 180px;
+		}
+		&__banner {
+			padding: 28px;
+		}
+		&__link {
+			font-size: 14px;
+			line-height: 120%;
+			padding: 8px 10px;
 		}
 	}
 }
