@@ -69,3 +69,13 @@
 		}
 	}
 }
+
+@media (max-width: 350px) {
+	.nav {
+		&__item {
+			&-extend {
+				padding: 11px;
+			}
+		}
+	}
+}
