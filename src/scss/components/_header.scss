@@ -1,12 +1,13 @@
 .header {
-	background: var(--blue-color);
-	padding-top: 22px;
-	padding-bottom: 22px;
+	padding-top: 25px;
+	padding-bottom: 27px;
 	&__container {
-		max-width: 1540px;
+		padding: 14px 50px 16px 37px;
+		background: var(--blue-color);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		border-radius: 25px;
 	}
 }
 

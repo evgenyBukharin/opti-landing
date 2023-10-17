@@ -1,0 +1,128 @@
+.group {
+	margin-top: 25px;
+	&__container {
+		border-radius: 25px;
+		background: var(--second-light-blue-color);
+		padding: 68px 30px 32px;
+	}
+	&__title {
+		margin-top: 4px;
+		color: var(--white-color);
+		margin-bottom: 69px;
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__column {
+		padding-left: 32px;
+		&-partners {
+			margin-top: 71px;
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: 84px;
+			gap: 15px;
+		}
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: 538px 310px;
+		gap: 25px 125px;
+	}
+	&__item {
+		position: relative;
+		grid-column: 1 span;
+		color: var(--white-color);
+		font-size: 28px;
+		line-height: normal;
+		&::before {
+			content: "+";
+			color: var(--white-color);
+			font-weight: 700;
+			margin-right: 6px;
+		}
+	}
+	&__image {
+		margin-right: 93px;
+	}
+	&__icon {
+		&-1c {
+			margin-left: 13px;
+			width: 49px;
+			height: 49px;
+			min-width: 49px;
+			min-height: 49px;
+		}
+		&-change {
+			transition: fill 0.4s ease;
+		}
+	}
+	&__partner {
+		position: relative;
+		grid-column: 2 span;
+		padding: 7px 10px 7px 9px;
+		border-radius: 20px;
+		background: #00a0e3;
+		display: flex;
+		gap: 20px;
+		align-items: center;
+		transition: background 0.4s ease;
+		&-purple {
+			&:hover {
+				background: #45398f;
+				& .group__icon-change {
+					fill: #45398f;
+				}
+			}
+		}
+		&-green {
+			&:hover {
+				background: #9dc64c;
+				& .group__icon-change {
+					fill: #9dc64c;
+				}
+			}
+		}
+		&-yellow {
+			&:hover {
+				background: #f2d450;
+				& .group__icon-change {
+					fill: #f2d450;
+				}
+			}
+		}
+		&-blue {
+			&:hover {
+				background: #307cc0;
+				& .group__icon-change {
+					fill: #307cc0;
+				}
+			}
+		}
+		&-lightblue {
+			&:hover {
+				background: #35bff0;
+				& .group__icon-change {
+					fill: #35bff0;
+				}
+			}
+		}
+		&-pink {
+			&:hover {
+				background: #d45b9e;
+				& .group__icon-change {
+					fill: #d45b9e;
+				}
+			}
+		}
+	}
+	&__text {
+		text-transform: uppercase;
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 18px;
+		min-height: 69px;
+		display: flex;
+		align-items: center;
+	}
+}

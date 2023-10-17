@@ -20,6 +20,9 @@ html {
 	min-height: 100%;
 	font-size: 16px;
 	position: relative;
+	background: url("../img/bg.png");
+	background-repeat: repeat-y;
+	background-size: cover;
 }
 
 .site-container {
