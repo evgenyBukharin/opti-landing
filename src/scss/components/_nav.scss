@@ -53,7 +53,7 @@
 	}
 }
 
-@media (max-width: 709px) {
+@media (max-width: 730px) {
 	.nav {
 		&__item {
 			&-extend {
@@ -66,13 +66,6 @@
 		&__link {
 			font-size: 18px;
 			line-height: 18px;
-		}
-	}
-}
-
-@media (max-width: 386px) {
-	.nav {
-		&__item {
 		}
 	}
 }

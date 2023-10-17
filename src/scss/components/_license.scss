@@ -1,0 +1,111 @@
+.license {
+	margin-top: 200px;
+	&__title {
+		text-align: center;
+		margin: 0 auto 113px;
+		max-width: 950px;
+		color: var(--dark-blue-color);
+		&-banner {
+			color: var(--white-color);
+			font-size: 58px;
+			font-weight: 600;
+			line-height: normal;
+			margin-bottom: 65px;
+		}
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		gap: 25px;
+		counter-reset: items 0;
+		margin-bottom: 25px;
+		&-inner:not(.list-reset) {
+			padding-left: 13px;
+			list-style: "- ";
+		}
+	}
+	&__item {
+		position: relative;
+		grid-column: 4 span;
+		padding: 150px 57px 47px 50px;
+		border-radius: 25px;
+		background: var(--dark-blue-color);
+		min-height: 300px;
+		counter-increment: items 1;
+		&::before {
+			content: counter(items);
+			position: absolute;
+			top: 22px;
+			left: 28px;
+			color: var(--white-color);
+			font-size: 62px;
+			line-height: 62px;
+			font-weight: 600;
+		}
+		&::after {
+			content: "";
+			width: 100px;
+			height: 2px;
+			position: absolute;
+			top: 85px;
+			left: 35px;
+			background: var(--white-color);
+			rotate: -45deg;
+		}
+		&:hover {
+			& .license__icon {
+				transform: translateY(-4px);
+			}
+		}
+	}
+	&__text {
+		margin: 0;
+		color: var(--grey-color);
+		font-weight: 400;
+		&-primary {
+			font-size: 20px;
+			line-height: 25px;
+		}
+		&-secondary {
+			font-size: 14px;
+			line-height: 25px;
+		}
+	}
+	&__icon {
+		position: absolute;
+		bottom: 30px;
+		right: 30px;
+		background: var(--license-light-blue-color);
+		border-radius: 100%;
+		width: 25px;
+		height: 25px;
+		min-height: 25px;
+		min-width: 25px;
+		transition: transform 0.3s ease;
+	}
+	&__banner {
+		padding: 75px 87px 50px 50px;
+		background: var(--license-light-blue-color);
+		border-radius: 25px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__links {
+		display: flex;
+		gap: 41px;
+	}
+	&__link {
+		color: var(--white-color);
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px;
+		padding: 14px 28px;
+		background: var(--dark-blue-color);
+		border-radius: 10px;
+		text-decoration: none;
+		&-light {
+			background: var(--second-light-blue-color);
+		}
+	}
+}

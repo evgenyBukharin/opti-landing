@@ -2,7 +2,7 @@
 	// base
 	--font-family: "Golos-Text", sans-serif;
 	--content-width: 1550px;
-	--container-offset: 20px;
+	--container-offset: 25px;
 	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
 	// colors
@@ -14,4 +14,5 @@
 	--dark-blue-color: #142647;
 	--grey-color: #cae0ee;
 	--bonus-section-bg: #a4d9ee;
+	--license-light-blue-color: #3799d7;
 }
