@@ -139,18 +139,23 @@
 		&__partner {
 			grid-column: 4 span;
 		}
+		&__image {
+			width: 250px;
+			height: auto;
+		}
 	}
 }
 
 @media (max-width: 1024px) {
 	.group {
-		&__image {
-			margin-right: 0;
-		}
 		&__column {
 			&-partners {
 				margin-top: 60px;
 			}
+		}
+		&__image {
+			margin-right: 0;
+			width: unset;
 		}
 	}
 }

@@ -122,6 +122,19 @@
 	}
 }
 
+@media (max-width: 830px) {
+	.footer {
+		&__link {
+			&-aside {
+				order: 0;
+			}
+			&-call {
+				order: 1;
+			}
+		}
+	}
+}
+
 @media (max-width: 768px) {
 	.footer {
 		&__column {

@@ -10,11 +10,13 @@
 		overflow: hidden;
 	}
 	&__title {
+		position: relative;
 		max-width: 975px;
 		margin-bottom: 58px;
 		font-size: 68px;
 		font-weight: 700;
 		line-height: 77.5px;
+		z-index: 100;
 	}
 	&__subtitle {
 		margin-top: 8px;
@@ -51,6 +53,7 @@
 	}
 	&__path {
 		position: absolute;
+		top: 0;
 		&-tablet {
 			display: none;
 		}
@@ -78,11 +81,14 @@
 @media (max-width: 1300px) {
 	.hero {
 		&__container {
-			padding: 64px 60px 160px;
+			padding: 64px 60px;
 		}
 		&__button {
 			margin-top: 26px;
 			margin-left: 0;
+		}
+		&__title {
+			margin-bottom: 0;
 		}
 	}
 }
@@ -95,19 +101,18 @@
 			align-items: flex-start;
 			font-size: 58px;
 			line-height: normal;
+			max-width: 530px;
 		}
 	}
 }
 
 @media (max-width: 768px) {
 	.hero {
-		&__container {
-			padding: 186px 35px 150px 60px;
-		}
 		&__title {
 			margin-bottom: 0;
 			font-size: 48px;
-			line-height: 67px;
+			line-height: 120%;
+			max-width: 428px;
 		}
 		&__button {
 			margin-top: 57px;
@@ -119,6 +124,17 @@
 			&-tablet {
 				display: block;
 			}
+		}
+		&__image {
+			&-kit {
+				width: 300px;
+			}
+		}
+		&__subtitle {
+			margin-top: 0;
+		}
+		&__button {
+			margin-top: 38px;
 		}
 	}
 }
@@ -140,8 +156,9 @@
 			font-size: 18px;
 		}
 		&__title {
-			line-height: 125%;
-			font-size: 38px;
+			line-height: 117%;
+			font-size: 34px;
+			max-width: 298px;
 		}
 		&__button {
 			margin-top: 20px;
@@ -152,6 +169,14 @@
 		&__icon {
 			width: 32px;
 			height: 32px;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.hero {
+		&__title {
+			font-size: 26px;
 		}
 	}
 }

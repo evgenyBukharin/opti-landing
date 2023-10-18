@@ -65,10 +65,11 @@
 		&-primary {
 			font-size: 20px;
 			line-height: 25px;
+			margin-bottom: 6px;
 		}
 		&-secondary {
 			font-size: 14px;
-			line-height: 25px;
+			line-height: 150%;
 		}
 	}
 	&__icon {
@@ -105,8 +106,17 @@
 		background: var(--dark-blue-color);
 		border-radius: 10px;
 		text-decoration: none;
+		white-space: nowrap;
 		&-light {
 			background: var(--second-light-blue-color);
+		}
+	}
+}
+
+@media (max-width: 1351px) {
+	.license {
+		&__banner {
+			align-items: center;
 		}
 	}
 }
@@ -114,7 +124,6 @@
 @media (max-width: 1024px) {
 	.license {
 		&__banner {
-			align-items: center;
 			padding: 35px 87px 35px 35px;
 		}
 	}
@@ -142,6 +151,7 @@
 			margin-bottom: 70px;
 			line-height: 120%;
 			font-size: 63px;
+			max-width: 640px;
 		}
 	}
 }
@@ -152,7 +162,7 @@
 			&-banner {
 				font-size: 40px;
 				line-height: 120%;
-				margin-bottom: 35px;
+				margin-bottom: 44px;
 			}
 		}
 		&__link {
@@ -213,7 +223,7 @@
 			line-height: 38px;
 			&-banner {
 				font-size: 26px;
-				margin-bottom: 15px;
+				margin-bottom: 24px;
 			}
 		}
 		&__list {
