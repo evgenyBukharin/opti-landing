@@ -173,10 +173,11 @@
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
 	.license {
 		margin-top: 100px;
 		&__item {
+			grid-column: 12 span;
 			min-height: 240px;
 			padding: 80px 20px 48px;
 			&::before {
@@ -230,7 +231,6 @@
 			column-gap: 0;
 		}
 		&__item {
-			grid-column: 12 span;
 			min-height: 180px;
 		}
 		&__banner {
